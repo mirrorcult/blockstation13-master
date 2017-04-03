@@ -7,6 +7,12 @@ The server can be found at: byond://68.99.199.74:1337
 
 It is (usually) up, save for updates.
 
+## Admins
+
+Kjolstet...........Host / Maintainer
+The_Tie............Game Master
+RiotTrout..........Game Master
+
 ## LICENSE
 
 All code after [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU AGPL v3](http://www.gnu.org/licenses/agpl-3.0.html).
