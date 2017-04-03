@@ -1,3 +1,8 @@
+datum/chemical_reaction/honkhonkhonk
+	name = "Pure Honkium"
+	id = "phonk"
+	results = list("phonk" = 5)
+	required_reagents = list("bananahonk" = 1, "ethanol" = 1, "sacid" = 1)
 
 /datum/chemical_reaction/sterilizine
 	name = "Sterilizine"

@@ -20,7 +20,7 @@ Cook=2,1
 Botanist=3,2
 Janitor=2,1
 
-Clown=1,1
+Clown=999,1
 Mime=1,1
 Librarian=1,1
 Lawyer=2,2

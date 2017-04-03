@@ -777,8 +777,8 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Research Division Server Room"
 	icon_state = "server"
 
-/area/toxins/explab
-	name = "Experimentation Lab"
+/area/toxins/scichem
+	name = "Science Chemistry Lab"
 	icon_state = "toxmisc"
 
 //Storage

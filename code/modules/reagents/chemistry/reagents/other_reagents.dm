@@ -288,13 +288,13 @@
 	if (!istype(T))
 		return
 	if(reac_volume >= 1)
-		T.MakeSlippery(TURF_WET_LUBE, 15, min(reac_volume * 2, 120))
+		T.MakeSlippery(TURF_WET_LUBE, 15, min(reac_volume * 6, 120))
 
 /datum/reagent/spraytan
 	name = "Spray Tan"
 	id = "spraytan"
 	description = "A substance applied to the skin to darken the skin."
-	color = "#FFC080" // rgb: 255, 196, 128  Bright orange
+	color = "#AAC080" // rgb: 255, 196, 128  Bright orange
 	metabolization_rate = 10 * REAGENTS_METABOLISM // very fast, so it can be applied rapidly.  But this changes on an overdose
 	overdose_threshold = 11 //Slightly more than one un-nozzled spraybottle.
 	taste_description = "sour oranges"
@@ -784,6 +784,39 @@
 			S.success_multiplier = max(0.20, S.success_multiplier)
 			// +20% success propability on each step, useful while operating in less-than-perfect conditions
 	..()
+
+datum/reagent/honkhonkhonk
+	name = "Pure Honkium"
+	id = "phonk"
+	description = "You get uneasy just thinking about taking this..."
+	reagent_state = LIQUID
+	taste_description = "sin"
+	color = "#FFFF00"
+
+datum/reagent/honkhonkhonk/on_mob_life(mob/living/M)
+	if(iscarbon(M))
+		M.Jitter(20)
+		if(prob(5))
+			M.emote(pick("twitch","drool","moan"))
+		if(prob(5))
+			var/phonk_message = pick("CLOWN PLANET IS CALLING.", "Welcome to clown planet!", "You have an overwhelming urge to HONK!")
+			to_chat(M, "<span class='danger'>[phonk_message]</span>")
+		if(M.hud_used)
+			if(current_cycle >= 5 && current_cycle % 3 == 0)
+				var/list/screens = list(M.hud_used.plane_masters["[GAME_PLANE]"], M.hud_used.plane_masters["[LIGHTING_PLANE]"])
+				var/matrix/skew = matrix()
+				var/intensity = 8
+				skew.set_skew(rand(-intensity,intensity), rand(-intensity,intensity))
+				var/matrix/newmatrix = skew
+
+				if(prob(33))
+					var/obj/screen/plane_master/PM = M.hud_used.plane_masters["[GAME_PLANE]"]
+					newmatrix = skew * PM.transform
+
+				for(var/whole_screen in screens)
+					animate(whole_screen, transform = newmatrix, time = 5, easing = QUAD_EASING, loop = -1)
+					animate(transform = -newmatrix, time = 5, easing = QUAD_EASING)
+
 
 /datum/reagent/iron
 	name = "Iron"

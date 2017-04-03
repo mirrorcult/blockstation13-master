@@ -38,31 +38,31 @@
 	taste_description = "metal"
 
 /datum/reagent/clf3
-	name = "Chlorine Trifluoride"
+	name = "Chlorine Tiefluoride"
 	id = "clf3"
 	description = "Makes a temporary 3x3 fireball when it comes into existence, so be careful when mixing. ClF3 applied to a surface burns things that wouldn't otherwise burn, sometimes through the very floors of the station and exposing it to the vacuum of space."
 	reagent_state = LIQUID
 	color = "#FFC8C8"
-	metabolization_rate = 4
+	metabolization_rate = 3
 	taste_description = "burning"
 
 /datum/reagent/clf3/on_mob_life(mob/living/M)
 	M.adjust_fire_stacks(2)
 	var/burndmg = max(0.3*M.fire_stacks, 0.3)
-	M.adjustFireLoss(burndmg, 0)
+	M.adjustFireLoss(burndmg * 4, 0)
 	..()
 	. = 1
 
 /datum/reagent/clf3/reaction_turf(turf/T, reac_volume)
 	if(istype(T, /turf/open/floor/plating))
 		var/turf/open/floor/plating/F = T
-		if(prob(10 + F.burnt + 5*F.broken)) //broken or burnt plating is more susceptible to being destroyed
+		if(prob(30 + F.burnt + 5*F.broken)) //broken or burnt plating is more susceptible to being destroyed
 			F.ChangeTurf(F.baseturf)
 	if(isfloorturf(T))
 		var/turf/open/floor/F = T
 		if(prob(reac_volume))
 			F.make_plating()
-		else if(prob(reac_volume))
+		else if(prob(reac_volume * 3))
 			F.burn_tile()
 		if(isfloorturf(F))
 			for(var/turf/turf in range(1,F))
@@ -70,7 +70,7 @@
 					new /obj/effect/hotspot(F)
 	if(iswallturf(T))
 		var/turf/closed/wall/W = T
-		if(prob(reac_volume))
+		if(prob(reac_volume * 3))
 			W.ChangeTurf(/turf/open/floor/plating)
 
 /datum/reagent/clf3/reaction_mob(mob/living/M, method=TOUCH, reac_volume)

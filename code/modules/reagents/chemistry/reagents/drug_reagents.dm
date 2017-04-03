@@ -45,6 +45,7 @@
 	M.AdjustParalysis(-1, 0)
 	M.AdjustStunned(-1, 0)
 	M.AdjustWeakened(-1, 0)
+	M.Jitter(15)
 	M.adjustStaminaLoss(-0.5*REM, 0)
 	..()
 	. = 1
@@ -143,7 +144,7 @@
 		M.adjustBruteLoss(50*REM, 0) // holy shit your skin just FELL THE FUCK OFF
 		M.set_species(/datum/species/krokodil_addict)
 	else
-		M.adjustBruteLoss(5*REM, 0)
+		M.adjustBruteLoss(10*REM, 0)
 	..()
 	. = 1
 
@@ -159,14 +160,13 @@
 
 /datum/reagent/drug/methamphetamine/on_mob_life(mob/living/M)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
-	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
-	M.AdjustParalysis(-2, 0)
-	M.AdjustStunned(-2, 0)
-	M.AdjustWeakened(-2, 0)
-	M.adjustStaminaLoss(-2, 0)
+	to_chat(M, "<span class ='danger'>Awwwwwww yeah. That hits the spot.</span>")
+	M.AdjustParalysis(-5, 0)
+	M.AdjustStunned(-5, 0)
+	M.AdjustWeakened(-5, 0)
+	M.adjustStaminaLoss(-5, 0)
 	M.status_flags |= GOTTAGOREALLYFAST
-	M.Jitter(2)
+	M.Jitter(20)
 	M.adjustBrainLoss(0.25)
 	if(prob(5))
 		M.emote(pick("twitch", "shiver"))
