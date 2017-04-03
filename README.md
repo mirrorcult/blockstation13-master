@@ -10,8 +10,11 @@ It is (usually) up, save for updates.
 ## Admins
 
 Kjolstet...........Host / Maintainer
+
 The_Tie............Game Master
+
 RiotTrout..........Game Master
+
 
 ## LICENSE
 
