@@ -790,7 +790,7 @@ datum/reagent/honkhonkhonk
 	id = "phonk"
 	description = "You get uneasy just thinking about taking this..."
 	reagent_state = LIQUID
-	taste_description = "sin"
+	taste_description = "sin and a hint of banana"
 	color = "#FFFF00"
 
 datum/reagent/honkhonkhonk/on_mob_life(mob/living/M)
@@ -798,9 +798,12 @@ datum/reagent/honkhonkhonk/on_mob_life(mob/living/M)
 		M.Jitter(20)
 		if(prob(5))
 			M.emote(pick("twitch","drool","moan"))
+		if(prob(2))
+			var/honktoplay = pick("sound/spookoween/scary_horn.ogg","sound/spookoween/scary_horn2.ogg","sound/spookoween/scary_horn3.ogg")
+			M.playsound_local(get_turf(M), "[honktoplay]", 50, 1)
 		if(prob(5))
-			var/phonk_message = pick("CLOWN PLANET IS CALLING.", "Welcome to clown planet!", "You have an overwhelming urge to HONK!")
-			to_chat(M, "<span class='danger'>[phonk_message]</span>")
+			var/phonk_message = pick("CLOWN PLANET IS CALLING.", "Welcome to clown planet!", "HONK !")
+			to_chat(M, "<span class='narsie'>[phonk_message]</span>")
 		if(M.hud_used)
 			if(current_cycle >= 5 && current_cycle % 3 == 0)
 				var/list/screens = list(M.hud_used.plane_masters["[GAME_PLANE]"], M.hud_used.plane_masters["[LIGHTING_PLANE]"])
@@ -816,6 +819,7 @@ datum/reagent/honkhonkhonk/on_mob_life(mob/living/M)
 				for(var/whole_screen in screens)
 					animate(whole_screen, transform = newmatrix, time = 5, easing = QUAD_EASING, loop = -1)
 					animate(transform = -newmatrix, time = 5, easing = QUAD_EASING)
+	..()
 
 
 /datum/reagent/iron

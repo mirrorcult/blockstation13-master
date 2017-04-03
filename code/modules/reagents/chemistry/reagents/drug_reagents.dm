@@ -160,6 +160,8 @@
 
 /datum/reagent/drug/methamphetamine/on_mob_life(mob/living/M)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
+	if(prob(5))
+		to_chat(M, "<span class='danger'>[high_message]</span>")
 	to_chat(M, "<span class ='danger'>Awwwwwww yeah. That hits the spot.</span>")
 	M.AdjustParalysis(-5, 0)
 	M.AdjustStunned(-5, 0)
