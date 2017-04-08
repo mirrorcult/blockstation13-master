@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice.
-# SERVERNAME Blockstation 13 - Admin Event Oriented Server
+SERVERNAME Blockstation 13 - Admin Event Oriented Server
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME tgstation
@@ -8,7 +8,7 @@
 STATIONNAME Blockstation 13
 
 ## Put on byond hub: uncomment this to put your server on the byond hub.
-HUB
+#HUB
 
 # Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
 LOBBY_COUNTDOWN 160
