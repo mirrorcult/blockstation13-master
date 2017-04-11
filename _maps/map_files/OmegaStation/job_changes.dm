@@ -38,8 +38,8 @@
 	MAP_JOB_CHECK
 	total_positions = 3
 	spawn_positions = 3
-	access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue, access_weapons, access_forensics_lockers)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court, access_maint_tunnels, access_morgue, access_weapons, access_forensics_lockers)
+	access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue, access_weapons, access_forensics_lockers)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_court, access_maint_tunnels, access_morgue, access_weapons, access_forensics_lockers)
 
 /datum/outfit/job/officer/New()
 	..()
@@ -163,5 +163,4 @@ MAP_REMOVE_JOB(cmo)
 MAP_REMOVE_JOB(geneticist)
 MAP_REMOVE_JOB(virologist)
 MAP_REMOVE_JOB(rd)
-MAP_REMOVE_JOB(warden)
 MAP_REMOVE_JOB(lawyer)
