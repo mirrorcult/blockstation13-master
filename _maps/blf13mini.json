@@ -1,7 +1,7 @@
 {
-    "map_name": "OmegaStation",
+    "map_name": "BLF13Mini",
     "map_path": "map_files/OmegaStation",
-    "map_file": "OmegaStation.dmm",
+    "map_file": "BLF13Mini.dmm",
     "minetype": "lavaland",
     "transition_config": "default"
 }
