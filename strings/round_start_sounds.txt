@@ -1,8 +1,6 @@
-sound/ambience/title1.ogg
-sound/ambience/title3.ogg
-sound/ambience/title4.ogg
 sound/misc/i_did_not_grief_them.ogg
 sound/ambience/clown.ogg
 sound/misc/setro_poem_reading.ogg
 sound/misc/bike3.mid
 sound/misc/After_School_Special.ogg
+sound/misc/Space-Station-13.ogg
