@@ -84795,14 +84795,14 @@
 /area/maintenance/fpmaint2/port_maintenance)
 "dej" = (
 /turf/closed/wall/r_wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "del" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dem" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/light{
@@ -84813,14 +84813,14 @@
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "den" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "deo" = (
 /obj/structure/cable/white{
 	d2 = 2;
@@ -84841,7 +84841,7 @@
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dep" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/status_display{
@@ -84849,12 +84849,12 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "deq" = (
 /obj/structure/closet/l3closet/scientist,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "der" = (
 /obj/structure/closet/bombcloset,
 /obj/machinery/light{
@@ -84862,17 +84862,17 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "des" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/radiation,
 /obj/item/clothing/head/radiation,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "det" = (
 /turf/closed/wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "deu" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	icon_state = "intact";
@@ -85755,7 +85755,7 @@
 /obj/item/clothing/mask/gas,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dfY" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 5
@@ -85763,7 +85763,7 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 1
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dfZ" = (
 /obj/machinery/atmospherics/components/trinary/filter{
 	density = 0;
@@ -85773,7 +85773,7 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 1
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dga" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 9
@@ -85781,7 +85781,7 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 1
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dgb" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
@@ -85790,7 +85790,7 @@
 	icon_state = "whitepurple";
 	dir = 1
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dgc" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 2;
@@ -85799,12 +85799,12 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 4
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dgd" = (
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 4
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dgf" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -86277,7 +86277,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 2;
@@ -86288,34 +86288,34 @@
 /turf/open/floor/plasteel/whitepurple/side{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhj" = (
 /turf/open/floor/plasteel/neutral,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhk" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/neutral,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhl" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/neutral,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhm" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/neutral,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhn" = (
 /obj/machinery/holopad,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dho" = (
 /turf/open/floor/plasteel/whitepurple/side{
 	dir = 4
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhp" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -86325,7 +86325,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dhq" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 4;
@@ -87209,7 +87209,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "diZ" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -87219,7 +87219,7 @@
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dja" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -87231,7 +87231,7 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "djb" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -87246,7 +87246,7 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "djc" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -87260,7 +87260,7 @@
 /turf/open/floor/plasteel/whitepurple/corner{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "djd" = (
 /obj/structure/table/reinforced,
 /obj/structure/cable/white{
@@ -87281,7 +87281,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dje" = (
 /obj/structure/chair/office/light,
 /obj/effect/landmark/start/scientist,
@@ -87293,7 +87293,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "djf" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/clipboard,
@@ -87310,7 +87310,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "djg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -87319,7 +87319,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/whitepurple/corner,
-/area/toxins/explab)
+/area/toxins/scichem)
 "djh" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -87329,7 +87329,7 @@
 	},
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dji" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
@@ -87346,7 +87346,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "djj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -88196,7 +88196,7 @@
 	dir = 8
 	},
 /turf/closed/wall/r_wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkO" = (
 /obj/structure/table,
 /obj/item/stack/medical/gauze,
@@ -88208,12 +88208,12 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkP" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkQ" = (
 /obj/machinery/light,
 /obj/machinery/disposal/bin,
@@ -88225,7 +88225,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkR" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/color/white,
@@ -88239,7 +88239,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkS" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/book/manual/experimentor,
@@ -88251,7 +88251,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkT" = (
 /obj/machinery/computer/rdconsole/experiment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -88259,7 +88259,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkU" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/packageWrap,
@@ -88272,7 +88272,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkV" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light,
@@ -88285,7 +88285,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkW" = (
 /obj/item/weapon/twohanded/required/kirbyplants{
 	icon_state = "plant-21";
@@ -88298,14 +88298,14 @@
 	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkX" = (
 /obj/structure/sign/securearea,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /turf/closed/wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dkY" = (
 /obj/machinery/light/small,
 /obj/structure/closet/firecloset,
@@ -88951,7 +88951,7 @@
 "dml" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dmm" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/decal/cleanable/dirt,
@@ -88968,32 +88968,32 @@
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dmn" = (
 /obj/structure/sign/securearea,
 /turf/closed/wall/r_wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dmo" = (
 /obj/machinery/status_display,
 /turf/closed/wall/r_wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dmp" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dmq" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dmr" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/r_wall,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dms" = (
 /turf/closed/wall/r_wall,
 /area/toxins/mixing{
@@ -89585,18 +89585,18 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/vault,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dnF" = (
 /turf/open/floor/plasteel/vault,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dnG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/vault,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dnH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault,
-/area/toxins/explab)
+/area/toxins/scichem)
 "dnI" = (
 /obj/structure/closet/bombcloset,
 /obj/machinery/firealarm{
@@ -90248,7 +90248,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "doX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 8;
@@ -90258,7 +90258,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "doY" = (
 /mob/living/simple_animal/pet/dog/pug{
 	name = "Swanson"
@@ -90266,25 +90266,25 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "doZ" = (
 /obj/effect/landmark/revenantspawn,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dpa" = (
 /obj/machinery/r_n_d/experimentor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dpb" = (
 /turf/open/floor/plasteel/vault{
 	dir = 8
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dpc" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	icon_state = "intact";
@@ -90293,7 +90293,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dpd" = (
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 8;
@@ -90303,13 +90303,13 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dpe" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dpf" = (
 /obj/machinery/airalarm{
 	dir = 4;
@@ -91092,14 +91092,14 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dqC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light,
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dqD" = (
 /obj/machinery/camera{
 	c_tag = "Science - Experimentor";
@@ -91110,7 +91110,7 @@
 /turf/open/floor/plasteel/vault{
 	dir = 5
 	},
-/area/toxins/explab)
+/area/toxins/scichem)
 "dqE" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -111508,7 +111508,7 @@
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "egj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -111539,7 +111539,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel,
-/area/toxins/explab)
+/area/toxins/scichem)
 "egl" = (
 /obj/machinery/light/small{
 	dir = 8
