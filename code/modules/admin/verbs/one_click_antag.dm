@@ -262,8 +262,12 @@
 			if(!leader_chosen)
 				leader_chosen = 1
 				new_character.mind.make_Nuke(synd_spawn[spawnpos],nuke_code,1)
+				spawn(15)
+				new_character.forceMove(synd_spawn[spawnpos])
 			else
 				new_character.mind.make_Nuke(synd_spawn[spawnpos],nuke_code)
+				spawn(15)
+				new_character.forceMove(synd_spawn[spawnpos])				
 			spawnpos++
 		return 1
 	else
