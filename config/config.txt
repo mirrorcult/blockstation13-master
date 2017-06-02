@@ -156,16 +156,20 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-# FORUMURL https://discord.gg/UtbD5nR
+# FORUMURL 
 
 ## Wiki address
-# WIKIURL http://www.tgstation13.org/wiki
+WIKIURL http://www.tgstation13.org/wiki
 
 ##Rules address
-# RULESURL https://discord.gg/UtbD5nR
+RULESURL https://discord.gg/UtbD5nR
 
 ##Github address
-# GITHUBURL https://github.com/cyclowns/blockstation13-master
+GITHUBURL https://github.com/cyclowns/blockstation13-master
+
+## Discord address
+DISCORDURL https://discord.gg/UtbD5nR
+
 
 ##Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos
