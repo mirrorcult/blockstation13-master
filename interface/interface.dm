@@ -23,6 +23,20 @@
 		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
 	return
 
+
+
+/client/verb/discord()
+	set name = "discord"
+	set desc = "Visit the discord."
+	set hidden = 1
+	if(config.forumurl)
+		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
+			return
+		src << link(config.discordurl)
+	else
+		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
+	return
+
 /client/verb/rules()
 	set name = "rules"
 	set desc = "Show Server Rules."
