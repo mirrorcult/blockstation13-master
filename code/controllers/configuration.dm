@@ -77,9 +77,10 @@
 	var/server
 	var/banappeals
 	var/wikiurl = "http://www.tgstation13.org/wiki" // Default wiki link.
-	var/forumurl = "http://tgstation13.org/phpBB/index.php" //default forums
-	var/rulesurl = "http://www.tgstation13.org/wiki/Rules" // default rules
-	var/githuburl = "https://www.github.com/tgstation/-tg-station" //default github
+	var/forumurl = "" //default forums
+	var/rulesurl = "https://discord.gg/UtbD5nR" // default rules
+	var/githuburl = "https://github.com/cyclowns/blockstation13-master" //default github
+	var/discordurl = "https://discord.gg/UtbD5nR" // default discord
 	var/githubrepoid
 
 	var/forbid_singulo_possession = 0

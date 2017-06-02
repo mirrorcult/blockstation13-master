@@ -1534,7 +1534,7 @@ window "infowindow"
 		is-checked = false
 		group = ""
 		button-type = pushbutton
-	elem "forum"
+	elem "discord"
 		type = BUTTON
 		pos = 320,5
 		size = 100x20
@@ -1554,9 +1554,9 @@ window "infowindow"
 		right-click = false
 		saved-params = "is-checked"
 		on-size = ""
-		text = "Forum"
+		text = "Discord"
 		image = ""
-		command = "forum"
+		command = "discord"
 		is-flat = false
 		stretch = false
 		is-checked = false
