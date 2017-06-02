@@ -159,16 +159,16 @@ CHECK_RANDOMIZER
 # FORUMURL 
 
 ## Wiki address
-WIKIURL http://www.tgstation13.org/wiki
+# WIKIURL http://www.tgstation13.org/wiki
 
 ##Rules address
-RULESURL https://discord.gg/UtbD5nR
+# RULESURL https://discord.gg/UtbD5nR
 
 ##Github address
-GITHUBURL https://github.com/cyclowns/blockstation13-master
+# GITHUBURL https://github.com/cyclowns/blockstation13-master
 
 ## Discord address
-DISCORDURL https://discord.gg/UtbD5nR
+# DISCORDURL https://discord.gg/UtbD5nR
 
 
 ##Github repo id
