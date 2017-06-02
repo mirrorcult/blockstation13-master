@@ -205,6 +205,7 @@ var/list/gaslist_cache = init_gaslist_cache()
 	return reacting
 
 /datum/gas_mixture/proc/fire()
+	assert_gas("o2")
 	//combustion of plasma and volatile fuel, which both act as hydrocarbons (exothermic)
 	var/energy_released = 0
 	var/old_heat_capacity = heat_capacity()
@@ -233,9 +234,10 @@ var/list/gaslist_cache = init_gaslist_cache()
 			fuel_burnt += burned_fuel
 
 	//Handle plasma burning
-	if(cached_gases["plasma"] && cached_gases["plasma"][MOLES] > MINIMUM_HEAT_CAPACITY)
+	if(cached_gases["plasma"] && cached_gases["plasma"][MOLES] > MINIMUM_HEAT_CAPACITY && cached_gases["o2"][MOLES] > 0)
 		var/plasma_burn_rate = 0
 		var/oxygen_burn_rate = 0
+		var/plasmoles = cached_gases["plasma"][MOLES]
 		//more plasma released at higher temperatures
 		var/temperature_scale
 		if(temperature > PLASMA_UPPER_TEMPERATURE)
@@ -245,17 +247,21 @@ var/list/gaslist_cache = init_gaslist_cache()
 		if(temperature_scale > 0)
 			assert_gas("o2")
 			oxygen_burn_rate = OXYGEN_BURN_RATE_BASE - temperature_scale
+			world << "Oxy  burn rate: [oxygen_burn_rate]"
 			if(cached_gases["o2"][MOLES] > cached_gases["plasma"][MOLES]*PLASMA_OXYGEN_FULLBURN)
 				plasma_burn_rate = (cached_gases["plasma"][MOLES]*temperature_scale)/PLASMA_BURN_RATE_DELTA
 			else
 				plasma_burn_rate = (temperature_scale*(cached_gases["o2"][MOLES]/PLASMA_OXYGEN_FULLBURN))/PLASMA_BURN_RATE_DELTA
+
 			if(plasma_burn_rate > MINIMUM_HEAT_CAPACITY)
 				assert_gas("co2")
 				cached_gases["plasma"][MOLES] = QUANTIZE(cached_gases["plasma"][MOLES] - plasma_burn_rate)
 				cached_gases["o2"][MOLES] = QUANTIZE(cached_gases["o2"][MOLES] - (plasma_burn_rate * oxygen_burn_rate))
 				cached_gases["co2"][MOLES] += plasma_burn_rate
 
+
 				energy_released += FIRE_PLASMA_ENERGY_RELEASED * (plasma_burn_rate)
+
 
 				fuel_burnt += (plasma_burn_rate)*(1+oxygen_burn_rate)
 				garbage_collect()
@@ -264,6 +270,7 @@ var/list/gaslist_cache = init_gaslist_cache()
 		var/new_heat_capacity = heat_capacity()
 		if(new_heat_capacity > MINIMUM_HEAT_CAPACITY)
 			temperature = (temperature*old_heat_capacity + energy_released)/new_heat_capacity
+
 
 	return fuel_burnt
 
