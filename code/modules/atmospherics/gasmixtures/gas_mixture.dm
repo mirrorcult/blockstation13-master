@@ -237,7 +237,6 @@ var/list/gaslist_cache = init_gaslist_cache()
 	if(cached_gases["plasma"] && cached_gases["plasma"][MOLES] > MINIMUM_HEAT_CAPACITY && cached_gases["o2"][MOLES] > 0)
 		var/plasma_burn_rate = 0
 		var/oxygen_burn_rate = 0
-		var/plasmoles = cached_gases["plasma"][MOLES]
 		//more plasma released at higher temperatures
 		var/temperature_scale
 		if(temperature > PLASMA_UPPER_TEMPERATURE)

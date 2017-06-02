@@ -1,4 +1,4 @@
-ocn## Server name: This appears at the top of the screen in-game and in the BYOND hub. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice.
+## Server name: This appears at the top of the screen in-game and in the BYOND hub. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice.
 SERVERNAME Blockstation 13 - Admin Event Oriented Server
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
@@ -8,7 +8,7 @@ SERVERNAME Blockstation 13 - Admin Event Oriented Server
 STATIONNAME Blockstation 13
 
 ## Put on byond hub: uncomment this to put your server on the byond hub.
-#HUB
+HUB
 
 # Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
 LOBBY_COUNTDOWN 160
@@ -156,20 +156,19 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-# FORUMURL 
+# FORUMURL http://tgstation13.org/phpBB/index.php
+
+##discord address
+# DISCORDURL https://discord.gg/UtbD5nR
 
 ## Wiki address
 # WIKIURL http://www.tgstation13.org/wiki
 
 ##Rules address
-# RULESURL https://discord.gg/UtbD5nR
+# RULESURL http://www.tgstation13.org/wiki/Rules
 
 ##Github address
-# GITHUBURL https://github.com/cyclowns/blockstation13-master
-
-## Discord address
-# DISCORDURL https://discord.gg/UtbD5nR
-
+# GITHUBURL https://www.github.com/tgstation/-tg-station
 
 ##Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos

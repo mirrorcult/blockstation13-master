@@ -10,3 +10,4 @@
 Kjolstet = Host
 The_Tie = Game Master
 RiotTrout = Game Master
+ZennerX = Coder

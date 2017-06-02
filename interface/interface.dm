@@ -29,12 +29,12 @@
 	set name = "discord"
 	set desc = "Visit the discord."
 	set hidden = 1
-	if(config.forumurl)
-		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
+	if(config.discordurl)
+		if(alert("This will open the discord in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		src << link(config.discordurl)
 	else
-		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='danger'>The discord URL is not set in the server configuration.</span>")
 	return
 
 /client/verb/rules()
