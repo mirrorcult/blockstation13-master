@@ -246,7 +246,6 @@ var/list/gaslist_cache = init_gaslist_cache()
 		if(temperature_scale > 0)
 			assert_gas("o2")
 			oxygen_burn_rate = OXYGEN_BURN_RATE_BASE - temperature_scale
-			world << "Oxy  burn rate: [oxygen_burn_rate]"
 			if(cached_gases["o2"][MOLES] > cached_gases["plasma"][MOLES]*PLASMA_OXYGEN_FULLBURN)
 				plasma_burn_rate = (cached_gases["plasma"][MOLES]*temperature_scale)/PLASMA_BURN_RATE_DELTA
 			else
