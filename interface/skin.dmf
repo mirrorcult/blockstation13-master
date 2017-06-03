@@ -192,6 +192,10 @@ macro "default"
 		command = ".screenshot"
 		is-disabled = false
 	elem 
+		name = "F3"
+		command = "Asay"
+		is-disabled = false
+	elem 
 		name = "F5"
 		command = "Aghost"
 		is-disabled = false
