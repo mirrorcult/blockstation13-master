@@ -37,5 +37,4 @@ Game Master		= +EVERYTHING
 
 Host			= +EVERYTHING
 
-<<<<<<< HEAD
 Coder			= +DEBUG +SERVER +VAREDIT +BUILD
