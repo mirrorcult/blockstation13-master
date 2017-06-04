@@ -6,7 +6,7 @@
 	config_tag = "monkey"
 	antag_flag = ROLE_MONKEY
 
-	required_players = 20
+	required_players = 4
 	required_enemies = 1
 	recommended_enemies = 1
 

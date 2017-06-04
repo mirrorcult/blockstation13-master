@@ -37,4 +37,8 @@ Game Master		= +EVERYTHING
 
 Host			= +EVERYTHING
 
+<<<<<<< HEAD
 Coder			= +DEBUG +SERVER +VAREDIT +BUILD
+=======
+Coder			= +DEBUG +VAREDIT +SERVER +SPAWN +ADMIN +FUN +POSESS +SPAWN +SOUND +BUILD
+>>>>>>> f20d67ceeb507c6bbbd8e18dcc3791566c6e298d
