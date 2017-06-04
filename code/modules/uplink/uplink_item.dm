@@ -280,7 +280,7 @@ var/list/uplink_items = list() // Global list so we only initialize this once.
 			energy swords to create a double energy sword, which must be wielded in two hands but is more robust \
 			and deflects all energy projectiles."
 	item = /obj/item/weapon/melee/energy/sword/saber
-	cost = 8
+	cost = 6
 
 /datum/uplink_item/dangerous/powerfist
 	name = "Power Fist"
