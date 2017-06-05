@@ -1,41 +1,41 @@
 
-#define MEDAL_PREFIX "Colossus"
+#define MEDAL_PREFIX "colossus"
 /*
 
-COLOSSUS
+clownossus
 
-The colossus spawns randomly wherever a lavaland creature is able to spawn. It is powerful, ancient, and extremely deadly.
-The colossus has a degree of sentience, proving this in speech during its attacks.
+The clownossus spawns randomly wherever a lavaland creature is able to spawn. It is powerful, ancient, and extremely deadly.
+The clownossus has a degree of sentience, proving this in speech during its attacks.
 
 It acts as a melee creature, chasing down and attacking its target while also using different attacks to augment its power that increase as it takes damage.
 
-The colossus' true danger lies in its ranged capabilities. It fires immensely damaging death bolts that penetrate all armor in a variety of ways:
- 1. The colossus fires death bolts in alternating patterns: the cardinal directions and the diagonal directions.
- 2. The colossus fires death bolts in a shotgun-like pattern, instantly downing anything unfortunate enough to be hit by all of them.
- 3. The colossus fires a spiral of death bolts.
-At 33% health, the colossus gains an additional attack:
- 4. The colossus fires two spirals of death bolts, spinning in opposite directions.
+The clownossus' true danger lies in its ranged capabilities. It fires immensely damaging death bolts that penetrate all armor in a variety of ways:
+ 1. The clownossus fires death bolts in alternating patterns: the cardinal directions and the diagonal directions.
+ 2. The clownossus fires death bolts in a shotgun-like pattern, instantly downing anything unfortunate enough to be hit by all of them.
+ 3. The clownossus fires a spiral of death bolts.
+At 33% health, the clownossus gains an additional attack:
+ 4. The clownossus fires two spirals of death bolts, spinning in opposite directions.
 
-When a colossus dies, it leaves behind a chunk of glowing crystal known as a black box. Anything placed inside will carry over into future rounds.
-For instance, you could place a bag of holding into the black box, and then kill another colossus next round and retrieve the bag of holding from inside.
+When a clownossus dies, it leaves behind a chunk of glowing crystal known as a black box. Anything placed inside will carry over into future rounds.
+For instance, you could place a bag of holding into the black box, and then kill another clownossus next round and retrieve the bag of holding from inside.
 
 Difficulty: Very Hard
 
 */
 
 /mob/living/simple_animal/hostile/megafauna/colossus
-	name = "colossus"
-	desc = "A monstrous creature protected by heavy shielding."
+	name = "clownossus"
+	desc = "Oh christ."
 	health = 2500
 	maxHealth = 2500
-	attacktext = "judges"
-	attack_sound = 'sound/magic/clockwork/ratvar_attack.ogg'
+	attacktext = "viciously honks"
+	attack_sound = 'sound/magic/clockwork/ratvar_attack_clown.ogg'
 	icon_state = "eva"
 	icon_living = "eva"
 	icon_dead = "dragon_dead"
-	friendly = "stares down"
+	friendly = "dances towards"
 	icon = 'icons/mob/lavaland/96x96megafauna.dmi'
-	speak_emote = list("roars")
+	speak_emote = list("honks")
 	armour_penetration = 40
 	melee_damage_lower = 40
 	melee_damage_upper = 40
@@ -49,10 +49,10 @@ Difficulty: Very Hard
 	loot = list(/obj/machinery/anomalous_crystal/random, /obj/item/organ/vocal_cords/colossus)
 	butcher_results = list(/obj/item/weapon/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/animalhide/ashdrake = 10, /obj/item/stack/sheet/bone = 30)
 	deathmessage = "disintegrates, leaving a glowing core in its wake."
-	death_sound = 'sound/magic/demon_dies.ogg'
+	death_sound = 'sound/magic/demon_dies_clown.ogg'
 
 /mob/living/simple_animal/hostile/megafauna/colossus/devour(mob/living/L)
-	visible_message("<span class='colossus'>[src] disintegrates [L]!</span>")
+	visible_message("<span class='clownossus'>[src] sends [L] to Clown Planet!</span>")
 	L.dust()
 
 /mob/living/simple_animal/hostile/megafauna/colossus/OpenFire()
@@ -61,7 +61,7 @@ Difficulty: Very Hard
 
 	if(enrage(target))
 		if(move_to_delay == initial(move_to_delay))
-			visible_message("<span class='colossus'>\"<b>You can't dodge.</b>\"</span>")
+			visible_message("<span class='clownossus'>\"<b>Cant dodge me if you slip!</b>\"</span>")
 		ranged_cooldown = world.time + 30
 		telegraph()
 		dir_shots(alldirs)
@@ -76,7 +76,7 @@ Difficulty: Very Hard
 		if(health < maxHealth/3)
 			double_spiral()
 		else
-			visible_message("<span class='colossus'>\"<b>Judgement.</b>\"</span>")
+			visible_message("<span class='clownossus'>\"<b>HOOOOOOOOONK!!</b>\"</span>")
 			INVOKE_ASYNC(src, .proc/spiral_shoot, rand(0, 1))
 
 	else if(prob(20))
@@ -97,7 +97,7 @@ Difficulty: Very Hard
 
 /obj/effect/overlay/temp/at_shield
 	name = "anti-toolbox field"
-	desc = "A shimmering forcefield protecting the colossus."
+	desc = "A shimmering forcefield protecting the clownossus."
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "at_shield2"
 	layer = FLY_LAYER
@@ -136,7 +136,7 @@ Difficulty: Very Hard
 	dir_shots(cardinal)
 
 /mob/living/simple_animal/hostile/megafauna/colossus/proc/double_spiral()
-	visible_message("<span class='colossus'>\"<b>Die.</b>\"</span>")
+	visible_message("<span class='clownossus'>\"<b>Feel the wrath of Clown Planet! HONK!!</b>\"</span>")
 
 	sleep(10)
 	INVOKE_ASYNC(src, .proc/spiral_shoot)
@@ -189,7 +189,7 @@ Difficulty: Very Hard
 		if(counter < 1)
 			counter = 16
 		shoot_projectile(marker)
-		playsound(get_turf(src), 'sound/magic/clockwork/invoke_general.ogg', 20, 1)
+		playsound(get_turf(src), 'sound/magic/clockwork/invoke_general_clown.ogg', 20, 1)
 		sleep(1)
 
 /mob/living/simple_animal/hostile/megafauna/colossus/proc/shoot_projectile(turf/marker)
@@ -210,13 +210,13 @@ Difficulty: Very Hard
 
 /mob/living/simple_animal/hostile/megafauna/colossus/proc/random_shots()
 	var/turf/U = get_turf(src)
-	playsound(U, 'sound/magic/clockwork/invoke_general.ogg', 300, 1, 5)
+	playsound(U, 'sound/magic/clockwork/invoke_general_clown.ogg', 300, 1, 5)
 	for(var/T in RANGE_TURFS(12, U) - U)
 		if(prob(5))
 			shoot_projectile(T)
 
 /mob/living/simple_animal/hostile/megafauna/colossus/proc/blast()
-	playsound(get_turf(src), 'sound/magic/clockwork/invoke_general.ogg', 200, 1, 2)
+	playsound(get_turf(src), 'sound/magic/clockwork/invoke_general_clown.ogg', 200, 1, 2)
 	var/turf/T = get_turf(target)
 	newtonian_move(get_dir(T, targets_from))
 	for(var/turf/turf in range(1, T))
@@ -225,7 +225,7 @@ Difficulty: Very Hard
 /mob/living/simple_animal/hostile/megafauna/colossus/proc/dir_shots(list/dirs)
 	if(!islist(dirs))
 		dirs = alldirs.Copy()
-	playsound(get_turf(src), 'sound/magic/clockwork/invoke_general.ogg', 200, 1, 2)
+	playsound(get_turf(src), 'sound/magic/clockwork/invoke_general_clown.ogg', 200, 1, 2)
 	for(var/d in dirs)
 		var/turf/E = get_step(src, d)
 		shoot_projectile(E)
@@ -235,12 +235,12 @@ Difficulty: Very Hard
 		if(M.client)
 			flash_color(M.client, rgb(200, 0, 0), 1)
 			shake_camera(M, 4, 3)
-	playsound(get_turf(src),'sound/magic/clockwork/narsie_attack.ogg', 200, 1)
+	playsound(get_turf(src),'sound/magic/clockwork/narsie_attack_clown.ogg', 200, 1)
 
 
 
 /obj/item/projectile/colossus
-	name ="death bolt"
+	name ="clownbolt"
 	icon_state= "chronobolt"
 	damage = 25
 	armour_penetration = 100
@@ -257,7 +257,7 @@ Difficulty: Very Hard
 
 /obj/item/device/gps/internal/colossus
 	icon_state = null
-	gpstag = "Angelic Signal"
+	gpstag = "Banana Signal"
 	desc = "Get in the fucking robot."
 	invisibility = 100
 
