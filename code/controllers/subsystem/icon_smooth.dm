@@ -20,7 +20,7 @@ var/datum/controller/subsystem/icon_smooth/SSicon_smooth
 		if (MC_TICK_CHECK)
 			return
 	if (!smooth_queue.len)
-		can_fire = 0
+		can_fire = 1
 
 /datum/controller/subsystem/icon_smooth/Initialize()
 	smooth_zlevel(1,TRUE)
