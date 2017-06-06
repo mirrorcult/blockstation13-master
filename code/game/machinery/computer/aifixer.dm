@@ -83,21 +83,18 @@
 		occupier.revive()
 	return occupier.health < 100
 
-/obj/machinery/computer/aifixer/process()
-	if(..())
-		if(active)
-			active = Fix()
-		updateDialog()
-		update_icon()
+
 
 /obj/machinery/computer/aifixer/Topic(href, href_list)
 	if(..())
 		return
 	if(href_list["fix"])
-		to_chat(usr, "<span class='notice'>Reconstruction in progress. This will take several minutes.</span>")
+		to_chat(usr, "<span class='notice'>Reconstruction in progress. This will take no time whatsoever.</span>")
 		playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 25, 0)
 		active = TRUE
 		add_fingerprint(usr)
+		Fix()
+		active = FALSE
 
 /obj/machinery/computer/aifixer/update_icon()
 	..()
