@@ -292,10 +292,10 @@
 			return
 
 		t = parsepencode(t, i, usr, iscrayon) // Encode everything from pencode to html
-		if(findtext(t, "[field]"))
-		usr.gib(FALSE)
-		message_admins("[key_name_admin(usr)] has used the field exploit on paper and was gibbed!")
-		log_admin("[key_name(usr)] used the field exploit on paper")
+		if(findtext(t, "\[field\]"))
+			usr.gib(FALSE)
+			message_admins("[key_name_admin(usr)] has used the field exploit on paper and was gibbed!")
+			log_admin("[key_name(usr)] used the field exploit on paper")
 
 		if(t != null)	//No input from the user means nothing needs to be added
 			if(id!="end")
