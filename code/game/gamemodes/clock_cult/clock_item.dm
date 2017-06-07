@@ -7,7 +7,7 @@
 	icon = 'icons/obj/clockwork_objects.dmi'
 	icon_state = "rare_pepe"
 	w_class = WEIGHT_CLASS_SMALL
-	origin_tech = "materials=20;engineering=20;plasmatech=20;powerstorage=20;bluespace=20;biotech=20;combat=20;magnets=20;syndicate=20;programming=20;syndicate=20"
+	origin_tech = "materials=20;engineering=20;plasmatech=20;powerstorage=20;bluespace=20;biotech=20;combat=20;magnets=20;syndicate=20;programming=20;syndicate=10"
 
 /obj/item/clockwork/New()
 	..()
