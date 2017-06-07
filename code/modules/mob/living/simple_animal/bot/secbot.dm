@@ -58,8 +58,8 @@
 	..()
 
 /mob/living/simple_animal/bot/secbot/pingsky
-	name = "Officer Pingsky"
-	desc = "It's Officer Pingsky! Delegated to satellite guard duty for harbouring anti-human sentiment."
+	name = "Kompressor"
+	desc = "It's Kompressor! Delegated to satellite guard duty for harbouring anti-human sentiment."
 	radio_channel = "AI Private"
 
 /mob/living/simple_animal/bot/secbot/Initialize()
