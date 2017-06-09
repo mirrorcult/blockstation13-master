@@ -249,7 +249,8 @@
 	desc = "A specialized ASMD laser-rifle, capable of flat-out disintegrating most targets in a single hit."
 	ammo_type = list(/obj/item/ammo_casing/energy/instakill)
 	force = 60
-	origin_tech = "combat=7;magnets=6"
+	origin_tech = "syndicate=20;combat=20"
+	materials = list(MAT_METAL=1) // you already spent enough resources on getting level 20
 
 /obj/item/weapon/gun/energy/laser/instakill/red
 	desc = "A specialized ASMD laser-rifle, capable of flat-out disintegrating most targets in a single hit. This one has a red design."
