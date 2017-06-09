@@ -3,3 +3,4 @@ sound/ambience/clown.ogg
 sound/misc/bike3.mid
 sound/misc/After_School_Special.ogg
 sound/misc/spyro.ogg
+sound/misc/musique_d_intro_2_but_its_in_snes_format_playable.ogg
