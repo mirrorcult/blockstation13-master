@@ -1,6 +1,12 @@
 // Armor, gloves, space suits - it all goes here
 
 /datum/export/gear
+//Meme blaster because I dont know where else to put this
+
+/datum/export/gear/meme_blaster
+	cost = 1200
+	unit_name = "meme blaster"
+	export_types = list(/obj/item/clockwork)
 
 // Security gear
 /datum/export/gear/sec_helmet

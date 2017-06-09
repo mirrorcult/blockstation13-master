@@ -157,7 +157,8 @@ var/datum/controller/subsystem/ticker/ticker
 	else
 		mode = config.pick_mode(master_mode)
 		if(!mode.can_start())
-			to_chat(world, "<B>Unable to start [mode.name].</B> Not enough players, [mode.required_players] players and [mode.required_enemies] eligible antagonists needed. Reverting to pre-game lobby.")
+			to_chat(world, "<B>Unable to start [mode.name].</B> Not enough players, [mode.required_players] players and [mode.required_enemies] eligible antagonists needed. Changing mode to secret...")
+			master_mode = "secret"
 			qdel(mode)
 			mode = null
 			SSjob.ResetOccupations()

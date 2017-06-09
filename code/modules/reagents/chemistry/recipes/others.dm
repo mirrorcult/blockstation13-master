@@ -582,6 +582,23 @@ datum/chemical_reaction/honkhonkhonk
 		new /mob/living/simple_animal/pet/dog/corgi(location)
 	..()
 
+/datum/chemical_reaction/felinium
+	name = "felinium"
+	id = "felinium"
+	required_reagents = list("carpet" = 1, "space_drugs" = 1, "strange_reagent" = 1, "blood" = 1)
+	required_temp = 374
+
+/datum/chemical_reaction/felinium/on_reaction(datum/reagents/holder, created_volume)
+	var/location = get_turf(holder.my_atom)
+	for(var/i = rand(1, created_volume), i <= created_volume, i++) // More lulz.
+		if(prob(50))
+			new /mob/living/simple_animal/pet/cat(location)
+		else if(prob(50))
+			new /mob/living/simple_animal/pet/cat/space(location)
+		else
+			new /mob/living/simple_animal/pet/cat/kitten(location)
+	..()
+
 /datum/chemical_reaction/hair_dye
 	name = "hair_dye"
 	id = "hair_dye"
