@@ -17,6 +17,9 @@ map tgstation2
 	#voteweight 1.5
 endmap
 
+map corruptstation
+endmap
+
 map metastation
 	minplayers 25
 	#voteweight 0.5
