@@ -27,7 +27,6 @@ var/datum/controller/subsystem/vote/SSvote
 			result()
 			for(var/client/C in voting)
 				C << browse(null, "window=vote;can_close=0")
-			reset()
 		else
 			var/datum/browser/client_popup
 			for(var/client/C in voting)
