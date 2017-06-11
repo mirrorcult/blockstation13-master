@@ -1,7 +1,7 @@
 /datum/game_mode/wizard/raginmages
 	name = "ragin' mages"
 	config_tag = "raginmages"
-	required_players = 20
+	required_players = 4
 	use_huds = 1
 	announce_span = "userdanger"
 	announce_text = "There are many, many wizards attacking the station!\n\
@@ -152,7 +152,7 @@
 /datum/game_mode/wizard/raginmages/bullshit
 	name = "very ragin' bullshit mages"
 	config_tag = "veryraginbullshitmages"
-	required_players = 20
+	required_players = 4
 	use_huds = 1
 	bullshit_mode = 1
 	time_check = 250
