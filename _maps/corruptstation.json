@@ -1,0 +1,7 @@
+{
+    "map_name": "CorruptStation",
+    "map_path": "map_files/CorruptStation",
+    "map_file": "corruptstation.dmm",
+    "minetype": "lavaland",
+    "transition_config": "default"
+}
