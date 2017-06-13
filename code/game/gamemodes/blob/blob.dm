@@ -32,7 +32,7 @@ var/list/blobs_legit = list() //used for win-score calculations, contains only b
 	var/blob_point_rate = 3
 	var/blob_base_starting_points = 80
 
-	var/blobwincount = 250
+	var/blobwincount = 650
 
 	var/messagedelay_low = 2400 //in deciseconds
 	var/messagedelay_high = 3600 //blob report will be sent after a random value between these (minimum 4 minutes, maximum 6 minutes)
