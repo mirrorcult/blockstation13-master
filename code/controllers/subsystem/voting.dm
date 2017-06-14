@@ -219,7 +219,6 @@ var/datum/controller/subsystem/vote/SSvote
 			. += "<h2>Vote: '[question]'</h2>"
 		else
 			. += "<h2>Vote: [capitalize(mode)]</h2>"
-		. += "Time Left: [time_remaining] s<hr><ul>"
 		for(var/i=1,i<=choices.len,i++)
 			var/votes = choices[choices[i]]
 			if(!votes)
