@@ -24,6 +24,7 @@ Cobalt
 Copernicium
 Copper
 Curium
+Corgium
 Darmstadtium
 Dubnium
 Dysprosium
@@ -34,6 +35,7 @@ Fermium
 Flerovium
 Fluorine
 Francium
+Felinium
 Gadolinium
 Gallium
 Germanium
