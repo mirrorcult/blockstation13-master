@@ -2,18 +2,20 @@
 
 ## What?
 
-This is a fork of the /tg/station branch built specifically for the Blockland Forums. Feel free to make PRs and report issues as needed.
-The server can be found at: byond://68.99.199.74:1337
+This is a really, REALLY DEAD fork of the /tg/station branch built specifically for the Blockland Forums. Don't make PRs and don't report issues.
+The server can be found at: 0xDEADBEEF
 
-It is (usually) up, save for updates.
+It is never up, save for never.
 
 ## Admins
 
-Kjolstet :		Host / Maintainer
+Kjolstet :		old Host / Maintainer
 
-The_Tie	:		Game Master
+The_Tie	:		old Game Master
 
-RiotTrout :		Game Master
+RiotTrout :		old Game Master
+
+Thin Air :      Host / Maintainer
 
 
 ## LICENSE
